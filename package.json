@@ -5,5 +5,8 @@
   "author": "wahidyankf",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
 }
