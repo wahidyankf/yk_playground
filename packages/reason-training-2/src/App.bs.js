@@ -41,7 +41,6 @@ function make(buyerName, buyerGender, order, _children) {
                 return type_ + (" with size " + (getOrderSizeAsString(size) + ", "));
               };
               var listOfOrders = order !== undefined ? order : /* [] */0;
-              console.log(List.length(listOfOrders));
               var match = List.length(listOfOrders) > 0;
               return ReasonReact.element(undefined, undefined, View$ReactTemplate.make(/* array */[
                               ReasonReact.element(undefined, undefined, Text$ReactTemplate.make("Welcome to our online store " + (honorificTitle + (" " + (buyerName + "!!!"))), /* array */[])),

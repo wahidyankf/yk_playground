@@ -59,8 +59,6 @@ let make = (~buyerName, ~buyerGender, ~order=?, _children) => {
       | None => []
       };
 
-    Js.log(List.length(listOfOrders));
-
     <View>
       <Text
         value={
