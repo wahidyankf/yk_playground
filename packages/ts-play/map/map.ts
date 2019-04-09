@@ -2,13 +2,13 @@ const map = <T, U>(
   iterFunction: (arrayItem: T) => U,
   arrayInput: Array<T>
 ): Array<U> => {
-  let tempArray = [];
+  let result = [];
 
   for (let i = 0; i < arrayInput.length; i++) {
-    tempArray.push(iterFunction(arrayInput[i]));
+    result.push(iterFunction(arrayInput[i]));
   }
 
-  return arrayInput.map(iterFunction);
+  return result;
 };
 
 export default map;
