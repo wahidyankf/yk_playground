@@ -13,7 +13,7 @@ test('array of int success', () => {
 });
 
 test('array of string success', () => {
-  expect(map(item => item + '-2', arrayOfInt)).toEqual([
+  expect(map(item => item + '-2', arrayOfString)).toEqual([
     '1-2',
     '2-2',
     '3-2',
