@@ -1,4 +1,4 @@
-const map = require('./map').default;
+const map = require('./mapWithReduceUncurried').default;
 
 const arrayOfInt = [1, 2, 3, 4];
 

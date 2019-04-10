@@ -1,4 +1,4 @@
-const mapRaw = (iterFunction, arrayInput) => {
+function map(iterFunction, arrayInput) {
   let result = [];
 
   for (let i = 0; i < arrayInput.length; i++) {
@@ -6,6 +6,6 @@ const mapRaw = (iterFunction, arrayInput) => {
   }
 
   return result;
-};
+}
 
-exports.default = mapRaw;
+exports.default = map;

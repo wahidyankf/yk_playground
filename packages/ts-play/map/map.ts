@@ -1,7 +1,7 @@
-const map = <T, U>(
+function map<T, U>(
   iterFunction: (arrayItem: T) => U,
   arrayInput: Array<T>
-): Array<U> => {
+): Array<U> {
   let result = [];
 
   for (let i = 0; i < arrayInput.length; i++) {
@@ -9,6 +9,6 @@ const map = <T, U>(
   }
 
   return result;
-};
+}
 
 export default map;

@@ -1,4 +1,4 @@
-const map = require('./mapRaw').default;
+const map = require('./mapWithReduceCurried').default;
 
 const arrayOfInt = [1, 2, 3, 4];
 
@@ -9,11 +9,11 @@ test('map function is defined', () => {
 });
 
 test('array of int success', () => {
-  expect(map(item => item * 2, arrayOfInt)).toEqual([2, 4, 6, 8]);
+  expect(map(item => item * 2)(arrayOfInt)).toEqual([2, 4, 6, 8]);
 });
 
 test('array of string success', () => {
-  expect(map(item => item + '-2', arrayOfInt)).toEqual([
+  expect(map(item => item + '-2')(arrayOfInt)).toEqual([
     '1-2',
     '2-2',
     '3-2',
